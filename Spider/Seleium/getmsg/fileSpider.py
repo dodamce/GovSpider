@@ -64,13 +64,14 @@ def setup():
                 save.InsertExcel(table, head, nrows)
                 nrows += 1
                 have_head = True
+
+            if not dialog_flag:
+                prevLine = val
+                dialog_flag = True
             # 写入数据
             if endLine.find(str(val)) != -1:
                 end = True
                 break
-            if not dialog_flag:
-                prevLine = val
-                dialog_flag = True
             save.InsertExcel(table, val, nrows)
             nrows += 1
         if end:
