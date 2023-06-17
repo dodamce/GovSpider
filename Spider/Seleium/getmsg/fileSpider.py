@@ -74,7 +74,7 @@ def setup():
             save.InsertExcel(table, val, nrows)
             nrows += 1
         if end:
-            prevLine = ':'.join(endLine.split(':')[1:])
+            # prevLine = ':'.join(endLine.split(':')[1:])
             print("Dialog: 今日数据爬取完毕")
             break
 
