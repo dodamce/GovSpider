@@ -84,4 +84,4 @@ def setup():
     # 写入配置文件
     save.writeLog(have_head, prevLine)
 
-    wb.save('data.xlsx')
+    wb.save('C:\\Users\\30309\\Desktop\\GovSpider\\Spider\\Seleium\\data.xlsx')
